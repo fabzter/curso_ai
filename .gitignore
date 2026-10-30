@@ -1,0 +1,12 @@
+.DS_Store
+*.ogg
+*.opus
+*.wav
+*.mp3
+*.m4a
+# Raw audio/media stays in the WhatsApp bridge store; only transcripts are kept here.
+.env
+*.token
+*.key
+# Scratch space for agents (not versioned)
+scratch/
