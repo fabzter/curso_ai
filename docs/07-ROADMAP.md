@@ -6,9 +6,9 @@
 | Phase | Goal | Exit criteria | Status |
 |---|---|---|---|
 | P0 Foundation | Repo, access, sources ingested, long-horizon scaffolding | `check-access.sh` green; S-01..S-03 ingested; AGENTS/STATE written | **Done 2026-10-30** |
-| P1 Syllabus review (Fab solo, D-009/D-013) | Review and improve Max's Temario v1 unit by unit: verify claims, fix gaps and pacing, adapt to .NET/Azure, rewrite in Rioplatense. Output: `curriculum/` review + proposed v2 syllabus | Review doc + v2 draft ready to show Max; Q-013 answered | **Next** |
-| P2 Research | Verify the tooling landscape per unit, with dated sources; benchmark comparable courses | One evidence-tagged note per unit in `research/`; claims in Temario v1 marked verified/outdated/unverified | Not started |
-| P3 Design | Pick ONE unit and build its full workshop (D-015 package), then the Module-3 case, rubrics, setup guide | `workshops/` first package complete; then Max review | Not started |
+| P1 Syllabus review (Fab solo, D-009/D-013) | Review and improve Max's Temario v1 unit by unit: verify claims, fix gaps and pacing, adapt to .NET/Azure, rewrite in Rioplatense. Output: `curriculum/` review + proposed v2 syllabus | Review doc + v2 draft ready to show Max; Q-013 ready to pick | **Done 2026-10-30** |
+| P2 Research | Verify the tooling landscape per unit, with dated sources; benchmark comparable courses | Baseline verification note in `research/2026-10-30_tooling-and-dotnet-azure-verification.md`; deepen per workshop in P3 | **Baseline Done 2026-10-30** |
+| P3 Design | Pick ONE unit (`Q-013`) and build its full workshop (`D-015` package), then the Module-3 case, rubrics, setup guide | `workshops/` first package complete; then Max review | **Next (awaiting Q-013)** |
 | P4 Build | Slides/handouts, exercise repos & templates, instructor guide, facilitator notes | Dry-run-ready package | Not started |
 | P5 Pilot & revise | Dry run (internal), fix timing/difficulty, freeze version for client | Signed-off v1.0 | Not started |
 

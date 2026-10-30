@@ -26,3 +26,9 @@ Max said it's "solo un draft" and that he made it by prompting Claude → treat 
 
 ## ASR variants note
 Fab's/Max's voice notes were reconciled by hand in the S-01 note. Where models disagreed, the S-01 note says so.
+
+## Cross-referenced local & primary web sources (added 2026-10-30 during P1)
+| ID | Source | Identifier / Location | Notes |
+|---|---|---|---|
+| S-04 | Fab's verified empirical research corpus | `~/Documents/agentic_sdlc_implementation_consulting/docs/01-investigacion.md` (read-only) | Used only for verified public study citations (METR Jul 2025, DORA 2025, Larbi et al. 2025, SWE-EVO 2026, ETH Zurich `AGENTS.md` paper Feb 2026, AgenticFlict 2026, Böckeler/Fowler SDD taxonomy Oct 2025) per `D-011`. |
+| S-05 | Primary GitHub & NuGet metadata for syllabus tools (2026-10-30) | Recorded in `research/2026-10-30_tooling-and-dotnet-azure-verification.md` | `modelcontextprotocol/csharp-sdk` (`v2.3.0`), `microsoft/agent-framework` (`Microsoft.Agents.AI` `v1.27.0`), `Microsoft.Extensions.AI` (`v10.11.0`), `github/spec-kit` (`v1.2.5`), `Fission-AI/OpenSpec` (`v1.15.0`), `bmad-code-org/BMAD-METHOD` (`v6.12.4`), `anthropics/claude-code` (`v2.1.314`), `openai/codex` (`rust-v0.166.0`). |

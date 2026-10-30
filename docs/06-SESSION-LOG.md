@@ -22,3 +22,13 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 **Decisions:** D-009 to D-016 (develop first then return to Max; audience; constraints out of scope; local repo; syllabus review first; .NET+Azure; workshop = 2-4 h package; Rioplatense voseo for deliverables).
 **Files touched:** `AGENTS.md`, `docs/00-STATE.md`, `01-CONTEXT.md`, `02-DECISIONS.md`, `03-OPEN-QUESTIONS.md`, `07-ROADMAP.md`, `sources/whatsapp/max-chat_*.md`.
 **Left open:** Q-002, Q-013, Q-001. Next: P1 syllabus review.
+
+## 2026-10-30 16:32–16:43 · Antigravity (Gemini 4 Argon) · P1 Syllabus Review, .NET/Azure Verification & Temario v2
+**Done**
+- Verified Oct 2026 versions and capabilities of all tools/SDKs in Max's syllabus via GitHub API, NuGet v3 API, primary READMEs, web search, and Fab's verified research in `~/Documents/agentic_sdlc_implementation_consulting/docs/01-investigacion.md`.
+- Key verified .NET/Azure & SDD facts: `ModelContextProtocol` & `ModelContextProtocol.AspNetCore` NuGet `v2.3.0` (2026-10-20); `Microsoft.Extensions.AI` `v10.11.0` (2026-10-15); Microsoft Agent Framework `Microsoft.Agents.AI` `v1.27.0` + `Microsoft.SemanticKernel` `v1.81.0`; `microsoft/mcp` & `Azure/azure-mcp`; `github/spec-kit` `v1.2.5` (2026-10-28, `/speckit-constitution` .. `/speckit-converge` + `bug` & `assess` extensions); `Fission-AI/OpenSpec` `v1.15.0` (2026-10-24, brownfield deltas); `bmad-code-org/BMAD-METHOD` `v6.12.4`; `anthropics/claude-code` `v2.1.314`; `openai/codex` `rust-v0.166.0`.
+- Wrote `research/2026-10-30_tooling-and-dotnet-azure-verification.md` (tagged per `AGENTS.md` evidence rules).
+- Wrote `curriculum/2026-10-30_syllabus-review-v1.md` (unit-by-unit audit of all 13 units, practice vs. theory rebalancing from 36% to 62.5%–70%, .NET/Azure integration, brownfield seed repo strategy, and `Q-013` workshop options).
+- Wrote `curriculum/2026-10-30_temario-v2-propuesta.md` (complete 52 h proposed v2 syllabus in Rioplatense Spanish ready to share with Max).
+**Files touched:** `research/2026-10-30_tooling-and-dotnet-azure-verification.md`, `curriculum/2026-10-30_syllabus-review-v1.md`, `curriculum/2026-10-30_temario-v2-propuesta.md`, `docs/00-STATE.md`, `docs/04-SOURCES.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** `Q-013` (Fab picks which workshop to build first for P3).
