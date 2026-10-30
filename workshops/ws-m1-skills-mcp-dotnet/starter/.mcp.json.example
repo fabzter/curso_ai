@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "guardiacloud-sla": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "src/GuardiaCloud.Sla.McpServer/GuardiaCloud.Sla.McpServer.csproj",
+        "--no-build"
+      ],
+      "env": {
+        "DOTNET_NOLOGO": "1"
+      }
+    }
+  }
+}

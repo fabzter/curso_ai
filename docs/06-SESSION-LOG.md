@@ -46,3 +46,16 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Verified both `starter/` (2/2 passed) and `solution/` (4/4 passed) with `dotnet test`.
 **Files touched:** `workshops/ws-m2-sdd-dotnet/**`, `.gitignore`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** `Q-014` (build second workshop vs. package for Max sync).
+
+## 2026-10-30 17:00–17:11 · Antigravity (Gemini 4 Argon) · P3 Second Full Workshop Package (`ws-m1-skills-mcp-dotnet`)
+**Done**
+- Recorded Fab's answer to `Q-014` (`D-018`): selected Option A — **Module 1 Graded Workshop (`workshops/ws-m1-skills-mcp-dotnet/`, Units 1.3 + 1.5, 15% of final course grade)**.
+- Verified exact public APIs and XML documentation of `ModelContextProtocol` (`v2.3.0`, native `net10.0`) and `Microsoft.Extensions.AI` (`v10.11.0`, `IChatClient`, `FunctionInvokingChatClient`, `AIFunctionFactory.Create`).
+- Built the complete Workshop package under `workshops/ws-m1-skills-mcp-dotnet/`:
+  - `00-WORKSHOP-SPEC.md` (3h45m workshop specification, learning objectives, 225-min agenda, prerequisites, layout).
+  - `01-GUIA-PASO-A-PASO.md` (student step-by-step hands-on guide in Rioplatense Spanish covering `SKILL.md` progressive disclosure, `ModelContextProtocol v2.3.0` server & tools, indirect prompt-injection defense, and `Microsoft.Extensions.AI v10.11.0` `FunctionInvokingChatClient`).
+  - `02-GUIA-FACILITADOR-Y-RUBRICA.md` (instructor runbook, `stdio` vs. `ModelContextProtocol.AspNetCore` Streamable HTTP guidance, MCP security talking points, troubleshooting table, and 100-point grading rubric = 15% of final course grade).
+  - `starter/` (compilable `.NET 10` solution `GuardiaCloud.Sla.McpWorkshop.sln`, `AGENTS.md`/`CLAUDE.md`, `.mcp.json.example`, incomplete `.agents/skills/dotnet-minimal-api-guardian/SKILL.md` + `references/rfc9457-catalogo-errores.md` + `scripts/verify-minimal-api.sh`, baseline `get_client_sla_policy` MCP tool, and 2 passing xUnit tests).
+  - `solution/` (compilable `.NET 10` reference solution passing `verify-minimal-api.sh` and 6 xUnit tests in 175 ms: all 3 MCP tools with `ReadOnlyHint`/`DestructiveHint` annotations, RFC 9457 allow-list validation, `SanitizeUntrustedNotes` neutralizing indirect prompt injection in `INC-2026-1002`, and multi-step `SlaTriageAgent` loop via `FunctionInvokingChatClient`).
+**Files touched:** `workshops/ws-m1-skills-mcp-dotnet/**`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** `Q-015` (next workshop vs. Capstone spec vs. Max sync pack).
