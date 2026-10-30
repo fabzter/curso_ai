@@ -32,3 +32,17 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Wrote `curriculum/2026-10-30_temario-v2-propuesta.md` (complete 52 h proposed v2 syllabus in Rioplatense Spanish ready to share with Max).
 **Files touched:** `research/2026-10-30_tooling-and-dotnet-azure-verification.md`, `curriculum/2026-10-30_syllabus-review-v1.md`, `curriculum/2026-10-30_temario-v2-propuesta.md`, `docs/00-STATE.md`, `docs/04-SOURCES.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** `Q-013` (Fab picks which workshop to build first for P3).
+
+## 2026-10-30 16:43–16:54 · Antigravity (Gemini 4 Argon) · P3 First Full Workshop Package (`ws-m2-sdd-dotnet`)
+**Done**
+- Recorded Fab's answer to `Q-013` (`D-017`): selected **Units 2.1 + 2.4 (Spec-Driven Development on .NET with EARS/GWT, GitHub Spec Kit `v1.2.5`, and OpenSpec `v1.15.0` brownfield deltas)**.
+- Inspected official `github/spec-kit` (`v1.2.5`) and `Fission-AI/OpenSpec` (`v1.15.0`) template schemas from GitHub to ensure 100% structural fidelity.
+- Built the complete Workshop package under `workshops/ws-m2-sdd-dotnet/`:
+  - `00-WORKSHOP-SPEC.md` (3h45m workshop specification, learning objectives, agenda, prerequisites, package layout).
+  - `01-GUIA-PASO-A-PASO.md` (student step-by-step hands-on guide in Rioplatense Spanish covering Adversarial Spec Analysis, EARS/GWT, Spec Kit `/speckit-bug-*` + `/speckit-constitution` $\rightarrow$ `/speckit-converge`, and OpenSpec `/opsx:explore` $\rightarrow$ `/opsx:archive`).
+  - `02-GUIA-FACILITADOR-Y-RUBRICA.md` (minute-by-minute instructor runbook, 7-item answer sheet for the Operations Manager role-play, common `.NET` + SDD classroom pitfalls, and 100-point grading rubric = 15% of final course grade).
+  - `starter/` (compilable `.NET 10` solution `GuardiaCloud.Sla.sln`, `AGENTS.md`/`CLAUDE.md`, `brief-cliente-ambiguo.md`, baseline `openspec/specs/sla-tracking/spec.md`, ASP.NET Core Minimal APIs + `TimeProvider` + `ProblemDetails`, 2 passing integration tests + 1 intentional `ResolvedAtUtc` bug in `SlaCalculator`).
+  - `solution/` (compilable `.NET 10` reference solution with `.specify/memory/constitution.md`, `.specify/bugs/resolved-sla-breach-drift/report.md`, `specs/001-sla-pause-windows/{spec,plan,tasks}.md`, `openspec/changes/archive/2026-10-30-cap-p1-pause-budget/*`, merged `openspec/specs/sla-tracking/spec.md`, full C# implementation, and 4 passing `WebApplicationFactory` integration test suites).
+- Verified both `starter/` (2/2 passed) and `solution/` (4/4 passed) with `dotnet test`.
+**Files touched:** `workshops/ws-m2-sdd-dotnet/**`, `.gitignore`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** `Q-014` (build second workshop vs. package for Max sync).

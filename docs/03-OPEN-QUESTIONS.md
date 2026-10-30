@@ -7,7 +7,7 @@ Ask Fab in batches (max ~5), most blocking first.
 | ID | Question | Why it matters | Who |
 |---|---|---|---|
 | Q-002 | Audience details: headcount, seniority mix, prior AI usage of the consultancy's members. Stack is now assumed **.NET + Azure** (D-014), but is the consultancy actually a .NET/Azure shop? | Pacing, depth, whether the stack assumption is right. | Fab / Max (later) |
-| Q-013 | After the syllabus review (D-013): which unit's workshop do we build first? Decide with the review's findings in hand. | Picks the first full workshop. | Fab |
+| Q-014 | Which workshop package do we build second (e.g., Units 1.3+1.5 `SKILL.md` + C# MCP Server `ModelContextProtocol` v2.3.0, or Units 1.4+2.3 Harness + `NetArchTest` Oracle), or do we package v2 + Workshop M2 for the sync with Max? | Next step in P3. | Fab |
 | Q-001 | **Name of the consultancy** (friend's firm in Buenos Aires; **not Shifta**). Who is "el 5"? | Branding/commercial only; **not blocking**. | Max (later) |
 
 ## Deferred (not relevant until we go back to Max)
@@ -21,6 +21,7 @@ Ask Fab in batches (max ~5), most blocking first.
 ## Answered
 | ID | Answer | Date | Decision |
 |---|---|---|---|
+| Q-013 | Build **Units 2.1 + 2.4 (Spec-Driven Development on .NET: EARS/GWT + GitHub Spec Kit v1.2.5 + OpenSpec v1.15.0 brownfield deltas)** as the first full workshop (`workshops/ws-m2-sdd-dotnet/`). | 2026-10-30 | D-017 |
 | Q-008 | A **workshop = a hands-on session of 2-4 h inside a unit**: objectives, prep, step-by-step exercise, starter repo, solution, rubric, facilitator guide. | 2026-10-30 | D-015 |
 | Q-011 | Course material is written in **Rioplatense Spanish (voseo)** to match the audience. Voseo applies ONLY to course deliverables, never to chat with Fab. | 2026-10-30 | D-016 |
 | Q-005 | The Friday 2026-10-30 session with Max has **not** happened. Fab will first expand on Max's work and develop part of the program and workshop **before going back to Max**. | 2026-10-30 | D-009 |

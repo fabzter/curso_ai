@@ -10,3 +10,9 @@
 *.key
 # Scratch space for agents (not versioned)
 scratch/
+# .NET build artifacts
+**/bin/
+**/obj/
+**/.vs/
+*.user
+
