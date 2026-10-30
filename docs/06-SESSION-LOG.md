@@ -16,3 +16,9 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Temario v1 arithmetic consistent; risks/gaps listed in `07-ROADMAP.md`.
 **Files touched:** everything in this repo (all new). Outside repo: built `~/src/transcribe.cpp` (new clone); WhatsApp bridge store gained 5 downloaded .ogg files in `store/52399205003325@lid/` (normal bridge behavior).
 **Left open:** Q-001…Q-012 (`03-OPEN-QUESTIONS.md`), esp. Q-005 (did Friday's session happen?).
+
+## 2026-10-30 16:25-16:35 · Antigravity (Claude Sonnet 5.5) · Fab's answers + decisions
+**Done:** Recorded Fab's answers (Q-005, Q-001 partial, Q-003, Q-002 partial, Q-006, Q-007, Q-012) and asked the remaining relevant questions (Q-008, Q-011, stack, first deliverable). Corrected the audience (consultancy members, not Disney; not Shifta) across `AGENTS.md`, `01-CONTEXT.md`, the S-01 note.
+**Decisions:** D-009 to D-016 (develop first then return to Max; audience; constraints out of scope; local repo; syllabus review first; .NET+Azure; workshop = 2-4 h package; Rioplatense voseo for deliverables).
+**Files touched:** `AGENTS.md`, `docs/00-STATE.md`, `01-CONTEXT.md`, `02-DECISIONS.md`, `03-OPEN-QUESTIONS.md`, `07-ROADMAP.md`, `sources/whatsapp/max-chat_*.md`.
+**Left open:** Q-002, Q-013, Q-001. Next: P1 syllabus review.

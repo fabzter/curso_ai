@@ -6,9 +6,9 @@
 | Phase | Goal | Exit criteria | Status |
 |---|---|---|---|
 | P0 Foundation | Repo, access, sources ingested, long-horizon scaffolding | `check-access.sh` green; S-01..S-03 ingested; AGENTS/STATE written | **Done 2026-10-30** |
-| P1 Align | Close blocking questions with Max (Q-001..Q-008); obtain what was sent to the client; agree split of work | Q-001..Q-008 answered; client-approved scope documented | Next |
+| P1 Syllabus review (Fab solo, D-009/D-013) | Review and improve Max's Temario v1 unit by unit: verify claims, fix gaps and pacing, adapt to .NET/Azure, rewrite in Rioplatense. Output: `curriculum/` review + proposed v2 syllabus | Review doc + v2 draft ready to show Max; Q-013 answered | **Next** |
 | P2 Research | Verify the tooling landscape per unit, with dated sources; benchmark comparable courses | One evidence-tagged note per unit in `research/`; claims in Temario v1 marked verified/outdated/unverified | Not started |
-| P3 Design | Learning objectives, unit plans, workshop specs, Module-3 case, assessment rubrics, environment/setup guide | `curriculum/` + `workshops/` reviewed by Max | Not started |
+| P3 Design | Pick ONE unit and build its full workshop (D-015 package), then the Module-3 case, rubrics, setup guide | `workshops/` first package complete; then Max review | Not started |
 | P4 Build | Slides/handouts, exercise repos & templates, instructor guide, facilitator notes | Dry-run-ready package | Not started |
 | P5 Pilot & revise | Dry run (internal), fix timing/difficulty, freeze version for client | Signed-off v1.0 | Not started |
 
@@ -16,7 +16,8 @@
 1. **Per-unit landscape check** of every tool named in the draft: Figma Make, v0, Lovable, Google Stitch; Cursor, Windsurf, Copilot, JetBrains AI; Claude Code, Codex (CLI + cloud), Devin (Knowledge/Playbooks/DeepWiki); Claude Agent SDK, OpenAI Agents SDK; MCP spec/transports/auth; GitHub Spec Kit, Kiro, BMAD, OpenSpec, Tessl. For each: current version/date, pricing/licensing model, enterprise/privacy posture, what changed in the last 90 days.
 2. **Skills / AGENTS.md / CLAUDE.md** as cross-tool standards: what is portable across harnesses today, what isn't (this very repo is a worked example).
 3. **Evidence on productivity & quality** of AI-assisted dev (RCTs, industry surveys) to anchor 2.2 "estimación en la era de agentes" and the metrics block; flag conflicting studies.
-4. **Enterprise constraints**: IP/licensing of generated code, secrets, data residency, approved-tool policies at large media companies (generic, since Disney's policy is unknown, Q-004).
+4. ~~Enterprise constraints~~ **Deprioritized** (D-011): client policy/licensing is out of scope for now. Keep the security/IP *teaching* content from the syllabus.
+4b. **.NET + Azure fit** (D-014): for each tool in the draft, how well it works with .NET/Azure (e.g. IDE support in Visual Studio/Rider/VS Code, Azure DevOps/GitHub integration, Azure-hosted model access, a C#/.NET MCP SDK, .NET agent frameworks). All of this is *to verify* with dated sources; nothing here is established.
 5. **Comparable courses/workshops** (e.g. the LIDR multi-agent workshop, vendor academies): structure, duration, price, hands-on ratio, what learners ask (Fab's stated interest).
 6. **Module 3 case**: candidate "client" scenarios that are completable in 6 h of implementation by teams of 3-5 with agents, with a seeded repo and automated acceptance tests.
 7. **Environment logistics**: accounts, license fallbacks (Devin/Kiro by demo), offline/network constraints, sandbox repos.

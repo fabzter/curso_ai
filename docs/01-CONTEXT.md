@@ -3,21 +3,23 @@
 > Facts below are tagged by source (see `04-SOURCES.md`). Anything not sourced is marked **(inference)** or **(unknown)**.
 
 ## The project in one paragraph
-Fab and Max are designing an in-person course (with workshops) on AI-assisted software development for a software consultancy
-and its client's dev teams. On 2026-10-13 Max told Fab he was exploring, with a third person he calls "el 5" (**unidentified**),
-giving an "AI for development" course to **Disney teams in Argentina**, and invited Fab to build it with him
-(his reasoning: Fab had just left his job and might have time). Fab said yes. After an initial proposal was sent to the client,
-Max reported on 2026-10-28 that **the client liked it and will give the go**; start date is still undefined. Max then shared a
-**new draft syllabus** (docx, Drive, produced by prompting Claude) as the base for joint work. They planned a working session for **Friday 2026-10-30**.
+Fab and Max are designing an in-person course (with workshops) on AI-assisted software development. **Audience (Fab, 2026-10-30, D-010):
+the members of a software consultancy in Buenos Aires, a friend of Max's; NOT Disney employees; consultancy name unknown, definitely not Shifta.**
+On 2026-10-13 Max told Fab he was exploring, with a third person he calls "el 5" (**unidentified**), giving an "AI for development"
+course "en unos equipos de Disney" (exact Disney link unknown; inference: the consultancy's staff work on Disney engagements; not needed now),
+and invited Fab to build it with him. Fab said yes. On 2026-10-28 Max reported that **"they liked what we sent and will give the go"**
+(what was sent: unknown, **Fab sent nothing**); start date undefined. Max then shared a **draft syllabus/calendar** (docx, Drive, made by prompting Claude).
+**Current plan (D-009):** the Friday 10-30 session with Max has NOT happened; Fab will first expand Max's draft and develop part of the program
+and an actual workshop on his own, then return to Max.
 
 ## People
 | Who | Role here | Notes |
 |---|---|---|
 | **Fab** (Fabrizio Hernández) | Co-author, user | Software architect/EM, CDMX. Account `faboster@gmail.com`. Has a separate method/IP project (see below). |
 | **Max Déboli** | Co-author, brings the client channel | Sr Software Eng. Manager @ Mercado Libre (Argentine, based in CDMX), ex-Lagash Chief Architect/Delivery Manager. Writes in Rioplatense Spanish. Vault note: `knowledge/05_people/Max Déboli.md` (read-only; contains unrelated sensitive context: do not copy). |
-| **"El 5"** | Unknown third party Max is working the Disney opportunity with | **(unknown)** — ask. Possibly at the consultancy. |
-| **Client** | Disney teams, Argentina | Per Max, WhatsApp 2026-10-13. Team count/size/stack/seniority **(unknown)**. |
-| **Consultancy firm** | The "software consultancy firm" Fab mentioned | **(unknown which one)**. Do not assume Shifta or Lagash without confirmation (see Q-001). |
+| **"El 5"** | Unknown third party in Max's side conversation | **(unknown)**. Not blocking. |
+| **Audience / client** | Members of a Buenos Aires software consultancy (friend of Max's) | Headcount/seniority/stacks **(unknown)**, Q-002. Not Disney employees. |
+| **Consultancy firm** | Friend's firm in Buenos Aires | Name **unknown**; **definitely not Shifta** (Fab, 2026-10-30). Q-001, not blocking. |
 
 ## Timeline (course window of the Max chat; times CDMX, UTC-6)
 | Date | Event | Source |
@@ -31,7 +33,7 @@ Max reported on 2026-10-28 that **the client liked it and will give the go**; st
 | 2026-10-28 14:42 | Max (voice): client liked what was sent, **"nos van a dar go"**, no start date yet (to be defined "in the following days"); wants to advance the material; proposes a meeting **this Friday** to shape it by prompting | WA voice |
 | 2026-10-28 15:55 | Max: he is NOT working on the link Fab had; he's on a **new file/doc made by prompting Claude** | WA text |
 | 2026-10-28 16:17 | Max sends the doc: "solo un draft, pero sobre eso podemos ir trabajando. El viernes nos organizamos" | WA text + Drive |
-| **2026-10-30 (today)** | Friday working session with Max — **status unknown** (Q-005) | — |
+| 2026-10-30 | Fab: the Friday session has **not** happened; he will develop first and go back to Max after (D-009) | Fab, chat with agent |
 
 ## The draft syllabus (Max, v1, Drive modified 2026-10-28T22:17Z)
 Full text: `sources/max-docs/2026-10-28_temario-desarrollo-sw-con-ia.md`. Title: *Temario: Desarrollo de Software con IA*.
@@ -49,10 +51,10 @@ Prerequisites: GitHub account, IDE, access to ≥1 harness (Claude Code or Codex
 Arithmetic check (2026-10-30): every unit's blocks sum to the stated hours; modules 20+18+14 = 52; weights = 100%.
 
 ## Related assets (read-only unless authorized)
-- `~/Documents/agentic_sdlc_implementation_consulting` — Fab's separate **method/IP** project (maturity model N0-N4, diagnostic, "Shifta Partnership").
-  **IP boundary unresolved** (Q-007): do NOT import its content into course material without Fab's explicit decision; the method relies on trade-secret protection (NDA before sharing).
-- `knowledge/01_projects/Agentic SDLC Proposal/Ideas.md` and `knowledge/01_projects/Shifta Partnership/` — vault notes on that method. Shifta is a Buenos Aires software house (Disney is in its public portfolio) —
-  **a possible but UNCONFIRMED link to this course.**
+- `~/Documents/agentic_sdlc_implementation_consulting` — Fab's separate **method/IP** project (maturity model N0-N4, diagnostic).
+  Not needed for this course (D-011). If you reuse its *research*, cite it as a source; its method is trade-secret-sensitive, so don't paste the method itself without asking Fab.
+- `knowledge/01_projects/Agentic SDLC Proposal/Ideas.md` and `knowledge/01_projects/Shifta Partnership/` — vault notes on that method.
+  Shifta is **NOT** involved in this course (Fab, 2026-10-30). The method repo is not needed here; its research may be used as an input (D-011).
 
 ## What we do NOT know yet
-See `03-OPEN-QUESTIONS.md`. Biggest: who the consultancy is, commercial/IP terms, client constraints (tools allowed, licenses), schedule/format, what exactly was sent to the client.
+See `03-OPEN-QUESTIONS.md`. Relevant now: what "the workshop" is (Q-008), audience details (Q-002), Spanish register (Q-011). Deferred: consultancy name, schedule, licenses, commercial terms.

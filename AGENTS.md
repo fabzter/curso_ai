@@ -6,7 +6,7 @@ Read this file fully, then follow **Session start protocol**. Keep it under ~150
 ## What this project is
 
 Research + design of an **in-person course with workshops: "Desarrollo de Software con IA"** (draft: 52 h, 3 modules),
-for a software consultancy / its client's dev teams. Co-owned by **Fab** (Fabrizio Hernández, the user) and **Max Déboli**
+for the members of a software consultancy in Buenos Aires (a friend of Max's; NOT Disney staff, NOT Shifta). Co-owned by **Fab** (Fabrizio Hernández, the user) and **Max Déboli**
 (Senior Engineering Manager at Mercado Libre, Fab's long-time mentor/friend). It is a **long-horizon project**: many sessions,
 many agents. Chat memory does not survive; **files in this repo are the only memory**.
 
@@ -70,7 +70,7 @@ Status snapshot: [`docs/00-STATE.md`](docs/00-STATE.md) (always current). Backgr
 | `workshops/` | Workshop specs, exercise repos, case studies |
 | `scripts/` | Helper scripts (`env.sh` holds all paths/IDs; fix paths there only) |
 
-Naming: dated artifacts `YYYY-MM-DD_short-name.ext`. Course deliverables in **Spanish**; agent-facing docs in English (technical terms stay in English).
+Naming: dated artifacts `YYYY-MM-DD_short-name.ext`. Course deliverables in **Rioplatense Spanish (voseo)**, since the audience is Argentine (D-016); agent-facing docs in English (technical terms stay in English). Primary exercise stack: **.NET + Azure** (D-014).
 
 ## Other agents' skills on this machine (read the SKILL.md before using the tool)
 
@@ -83,7 +83,7 @@ Full map and stale-skill warnings: `docs/05-TOOLING.md`.
 ## Working with Fab
 
 - Concise, direct, bluntness welcome, **no walls of text, no apology loops** — after a mistake: diagnose, fix, move on. If Fab steps away, wait.
-- Talk to Fab in English (technical) or **Mexican Spanish — never voseo / Argentinian Spanish** (Max writes in voseo; that's his, not ours).
+- Talk to Fab in English (technical) or **Mexican Spanish — never voseo / Argentinian Spanish**. The ONLY place voseo is correct is the course material itself (D-016); never in chat with Fab or in agent-facing docs.
 - Prefers explicit SPEC/PLAN/TODO/CONTEXT files over relying on memory; compact paste-ready handoff prompts.
 - Prefers small helper scripts over long raw command lines. No cron/background workarounds unless he asks to schedule.
 - Uncertain state claims ("X is broken", "Y doesn't exist") must be verified with concrete evidence before stating them.
