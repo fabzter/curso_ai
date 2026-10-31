@@ -84,3 +84,15 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
   - `solution/` (compilable `.NET 10` reference solution with `specs/command-center-v2/{spec,plan,tasks}.md`, `retrospectiva-metricas-equipo-referencia.md`, and **8 passing xUnit tests** in 545 ms covering `NetArchTest.Rules v1.3.2`, `BUG-301` webhook idempotency, `FEAT-301` 80% proactive escalation + 15-min cooldown, `FEAT-302` force-majeure dual approval + RFC 9457 `CC-400-SAME-APPROVER` / `CC-422-INVALID-DUAL-TOKEN`, and `FEAT-303` executive tier dashboard).
 **Files touched:** `workshops/ws-m3-capstone-dotnet/**`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** `Q-017` (prepare Option C — Async Weekend Update Pack for Max — vs. additional unit-level labs).
+
+## 2026-10-30 18:46–18:49 · Antigravity (Gemini 4 Argon) · P3/P4 Async Weekend Update & Walkthrough Pack for Max (`D-021`)
+**Done**
+- Recorded Fab's answer to `Q-017` (`D-021`): build the **Async Weekend Update & Walkthrough Pack for Max**.
+- Wrote `curriculum/2026-10-30_update-async-para-max.md` containing:
+  1. Executive summary of the 4 major improvements over *Temario v1* (rebalancing explicit practice to 62.5%–69.7%, native `.NET 10 + Azure` SDKs/tools verified as of Oct 2026, brownfield seed repo spine `GuardiaCloud.Sla`, and 4 complete `.NET 10` workshop/capstone packages).
+  2. Unit-by-unit comparison table (*Temario v1* $\rightarrow$ *Temario v2* across all 13 units).
+  3. Detailed walkthrough of the 4 completed `.NET 10` workshops (`ws-m1-skills-mcp-dotnet`, `ws-m2-sdd-dotnet`, `ws-m2-harness-oracle-dotnet`, `ws-m3-capstone-dotnet`).
+  4. 3 focused alignment questions for Max (confirming `.NET + Azure` stack mix, GitHub vs. Azure DevOps + IDE mix, and classroom harness licenses).
+- Prepared a concise, paste-ready WhatsApp message in Fab's natural voice (Mexican Spanish, tuteo) for Fab to review/send at his discretion.
+**Files touched:** `curriculum/2026-10-30_update-async-para-max.md`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** Awaiting Max's async weekend review (`Q-002`).
