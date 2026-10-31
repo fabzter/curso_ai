@@ -34,6 +34,7 @@ and an actual workshop on his own, then return to Max.
 | 2026-10-28 15:55 | Max: he is NOT working on the link Fab had; he's on a **new file/doc made by prompting Claude** | WA text |
 | 2026-10-28 16:17 | Max sends the doc: "solo un draft, pero sobre eso podemos ir trabajando. El viernes nos organizamos" | WA text + Drive |
 | 2026-10-30 | Fab: the Friday session has **not** happened; he will develop first and go back to Max after (D-009) | Fab, chat with agent |
+| 2026-10-30 16:21–16:34 | Fab texts Max that he is advancing the material and will send an update; Max replies he has things to attend to today and will work on it over the weekend; Fab confirms he'll send an **async update + explanation** for the weekend | WA text (`S-01`) |
 
 ## The draft syllabus (Max, v1, Drive modified 2026-10-28T22:17Z)
 Full text: `sources/max-docs/2026-10-28_temario-desarrollo-sw-con-ia.md`. Title: *Temario: Desarrollo de Software con IA*.

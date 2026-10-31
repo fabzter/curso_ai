@@ -7,7 +7,7 @@ Ask Fab in batches (max ~5), most blocking first.
 | ID | Question | Why it matters | Who |
 |---|---|---|---|
 | Q-002 | Audience details: headcount, seniority mix, prior AI usage of the consultancy's members. Stack is now assumed **.NET + Azure** (D-014), but is the consultancy actually a .NET/Azure shop? | Pacing, depth, whether the stack assumption is right. | Fab / Max (later) |
-| Q-015 | Next deliverable after completing `ws-m2-sdd-dotnet` and `ws-m1-skills-mcp-dotnet`: build Units 1.4+2.3 Harness & `NetArchTest` Verification Oracle Workshop (`ws-m2-harness-oracle-dotnet`), build the Module 3 Capstone Spec (`ws-m3-capstone-dotnet`), or prepare the executive sync pack for Max? | Next step in P3. | Fab |
+| Q-016 | Next step after completing 3 full `.NET 10` workshops (`ws-m2-sdd-dotnet`, `ws-m1-skills-mcp-dotnet`, `ws-m2-harness-oracle-dotnet`): build the **Module 3 Capstone Specification (`ws-m3-capstone-dotnet`)** or prepare the **Async Weekend Update & Walkthrough Pack for Max (Option C)**? | Next step in P3. | Fab |
 | Q-001 | **Name of the consultancy** (friend's firm in Buenos Aires; **not Shifta**). Who is "el 5"? | Branding/commercial only; **not blocking**. | Max (later) |
 
 ## Deferred (not relevant until we go back to Max)
@@ -21,6 +21,7 @@ Ask Fab in batches (max ~5), most blocking first.
 ## Answered
 | ID | Answer | Date | Decision |
 |---|---|---|---|
+| Q-015 | Build **Units 1.4 + 2.3 (`workshops/ws-m2-harness-oracle-dotnet/`: Harness Engineering + `NetArchTest` Oracle + HITL vs. Full AI in `git worktrees`)** now, and keep **Option C (Executive Sync/Update Pack for Max)** in mind for when we feel ready. | 2026-10-30 | D-019 |
 | Q-014 | Build **Units 1.3 + 1.5 (Module 1 Graded Workshop: `workshops/ws-m1-skills-mcp-dotnet/` — Team Skill `SKILL.md` + Official C# MCP Server `ModelContextProtocol` v2.3.0 + `Microsoft.Extensions.AI` v10.11.0 Triage Agent)** as the second full workshop. | 2026-10-30 | D-018 |
 | Q-013 | Build **Units 2.1 + 2.4 (Spec-Driven Development on .NET: EARS/GWT + GitHub Spec Kit v1.2.5 + OpenSpec v1.15.0 brownfield deltas)** as the first full workshop (`workshops/ws-m2-sdd-dotnet/`). | 2026-10-30 | D-017 |
 | Q-008 | A **workshop = a hands-on session of 2-4 h inside a unit**: objectives, prep, step-by-step exercise, starter repo, solution, rubric, facilitator guide. | 2026-10-30 | D-015 |

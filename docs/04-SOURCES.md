@@ -5,7 +5,7 @@ Every input used by this project. Re-fetch commands assume repo root. Update whe
 ## Authoritative (named by Fab)
 | ID | Source | Identifier | Version captured | Local copy | Re-fetch |
 |---|---|---|---|---|---|
-| S-01 | WhatsApp chat Fab ↔ Max Déboli (course window only, from 2026-10-13) | chat_jid `52399205003325@lid` (111 msgs total; ingest only ≥ 2026-10-13) | through 2026-10-28 16:21 (last msg "El viernes nos organizamos") | `sources/whatsapp/max-chat_2026-10-13_to_2026-10-28.md` | `./scripts/wa-max-chat.sh` |
+| S-01 | WhatsApp chat Fab ↔ Max Déboli (course window only, from 2026-10-13) | chat_jid `52399205003325@lid` (ingest only ≥ 2026-10-13) | through 2026-10-30 16:34 (last msg: Fab "Dale te paso update y explicación de lo que hice para que pueda ser async este fin") | `sources/whatsapp/max-chat_2026-10-13_to_2026-10-28.md` | `./scripts/wa-max-chat.sh` |
 | S-02 | Voice notes in S-01 (5 clips: 2 Fab 10-13, Max 10-28 14:42, Fab 10-28 ×2) | message ids in S-01 note | transcribed 2026-10-30, Nemotron + Parakeet | `sources/whatsapp/voice/*.txt` | `./scripts/wa-transcribe.sh <message_id>` |
 | S-03 | **"Temario Desarrollo de Software con IA.docx"** (Max's draft syllabus) | Drive fileId `1USyhkrKDHFNJihN0eT-FjCRHyZDgHXUh` (owner Max; opened by Fab via link sent 2026-10-28) | Drive `modifiedTime` **2026-10-28T22:17:19Z**, 10 779 bytes | `sources/max-docs/2026-10-28_temario-desarrollo-sw-con-ia.{docx,md}` | `./scripts/drive-fetch.sh 1USyhkrKDHFNJihN0eT-FjCRHyZDgHXUh temario-desarrollo-sw-con-ia` (new dated file if modified) |
 

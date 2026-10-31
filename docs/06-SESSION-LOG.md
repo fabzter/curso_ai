@@ -59,3 +59,16 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
   - `solution/` (compilable `.NET 10` reference solution passing `verify-minimal-api.sh` and 6 xUnit tests in 175 ms: all 3 MCP tools with `ReadOnlyHint`/`DestructiveHint` annotations, RFC 9457 allow-list validation, `SanitizeUntrustedNotes` neutralizing indirect prompt injection in `INC-2026-1002`, and multi-step `SlaTriageAgent` loop via `FunctionInvokingChatClient`).
 **Files touched:** `workshops/ws-m1-skills-mcp-dotnet/**`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** `Q-015` (next workshop vs. Capstone spec vs. Max sync pack).
+
+## 2026-10-30 18:28–18:37 · Antigravity (Gemini 4 Argon) · P3 Third Full Workshop Package (`ws-m2-harness-oracle-dotnet`) + WhatsApp Sync Update
+**Done**
+- Checked `./scripts/wa-max-chat.sh` and Drive `modifiedTime`: found 5 new WhatsApp messages (`2026-10-30 16:21–16:34`) where Max said he'll work on the course over the weekend and Fab offered an async update + explanation. Ingested into `sources/whatsapp/max-chat_2026-10-13_to_2026-10-28.md` and updated `docs/01-CONTEXT.md` & `docs/04-SOURCES.md`.
+- Recorded Fab's answer to `Q-015` (`D-019`): build **Option A (`workshops/ws-m2-harness-oracle-dotnet/`, Units 1.4 + 2.3)** now, keeping **Option C (Async Update Pack for Max)** queued for when ready.
+- Built the complete Workshop package under `workshops/ws-m2-harness-oracle-dotnet/`:
+  - `00-WORKSHOP-SPEC.md` (3h45m workshop specification, learning objectives, 225-min agenda, prerequisites, layout).
+  - `01-GUIA-PASO-A-PASO.md` (student step-by-step hands-on guide in Rioplatense Spanish covering `AGENTS.md` curation, `CLAUDE.md` `@AGENTS.md` bridge, `.claude/settings.json` `PostToolUse` hook, `NetArchTest.Rules` `v1.3.2` architectural fitness functions, and the parallel `git worktrees` HITL vs. Full AI lab).
+  - `02-GUIA-FACILITADOR-Y-RUBRICA.md` (instructor runbook anchored in ETH Zurich `arXiv:2602.11988` and AgenticFlict data, troubleshooting table, and 100-point rubric).
+  - `starter/` (compilable `.NET 10` solution `GuardiaCloud.Sla.HarnessLab.sln`, bloated `AGENTS.md` draft, `.claude/settings.json.example`, `.claude/agents/dotnet-arch-reviewer.md`, `scripts/post-edit-dotnet-hook.sh`, intentional `LegacyVibeCodedHelper.cs` violation in `Domain`, and 2 passing baseline tests).
+  - `solution/` (compilable `.NET 10` reference solution passing `./scripts/post-edit-dotnet-hook.sh` and all 7 xUnit tests in 353 ms: 3 `NetArchTest.Rules` tests + 4 `WebApplicationFactory` integration tests for Tarea A [HITL monthly credits] and Tarea B [Full AI shift export summary], plus `comparativa-hitl-vs-full-ai.md`).
+**Files touched:** `workshops/ws-m2-harness-oracle-dotnet/**`, `sources/whatsapp/max-chat_2026-10-13_to_2026-10-28.md`, `docs/00-STATE.md`, `docs/01-CONTEXT.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/04-SOURCES.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** `Q-016` (build Module 3 Capstone Spec `ws-m3-capstone-dotnet` vs. prepare the Async Weekend Update Pack for Max).
