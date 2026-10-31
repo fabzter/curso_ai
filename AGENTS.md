@@ -88,3 +88,4 @@ Full map and stale-skill warnings: `docs/05-TOOLING.md`.
 - Prefers small helper scripts over long raw command lines. No cron/background workarounds unless he asks to schedule.
 - Uncertain state claims ("X is broken", "Y doesn't exist") must be verified with concrete evidence before stating them.
 - Default Google account for everything here: `faboster@gmail.com`.
+- **Quota & Subagent Routing (D-022):** Delegate smaller, bounded, or mechanical tasks (e.g., git/GitHub CLI operations, file exports/formatting, boilerplate scaffolding, routine checks) to lighter subagent models (`Model: "flash"` / `"flash_lite"` in Antigravity, or Haiku/mini in other harnesses) to conserve Argon and Opus usage for architecture, research synthesis, and curriculum design.
