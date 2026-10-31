@@ -96,3 +96,14 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Prepared a concise, paste-ready WhatsApp message in Fab's natural voice (Mexican Spanish, tuteo) for Fab to review/send at his discretion.
 **Files touched:** `curriculum/2026-10-30_update-async-para-max.md`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** Awaiting Max's async weekend review (`Q-002`).
+
+## 2026-10-30 18:52–18:55 · Antigravity (subagent) · Governance: D-022 Subagent Quota Routing & D-023 Private GitHub Remote
+**Done**
+- Verified GitHub CLI authentication status (`fabzter`, active account, scopes: gist, read:org, repo, workflow).
+- Verified via `git status` and `git ls-files` that no `.NET` `bin/` or `obj/` build artifacts or secrets are tracked.
+- Recorded `D-022` (quota & subagent routing to lighter models like `flash` / `flash_lite` / Haiku for mechanical tasks) in `AGENTS.md` and `docs/02-DECISIONS.md`.
+- Recorded `D-023` (publish private repository to Fab's GitHub, superseding the "no remote" clause of `D-012`) in `docs/02-DECISIONS.md`.
+- Created private GitHub repository `curso_ai` under `fabzter` (`https://github.com/fabzter/curso_ai`) and pushed `master` branch tracking `origin/master`.
+- Updated `docs/00-STATE.md` and `docs/06-SESSION-LOG.md`.
+**Files touched:** `AGENTS.md`, `docs/02-DECISIONS.md`, `docs/00-STATE.md`, `docs/06-SESSION-LOG.md`.
+**Left open:** Awaiting Max's async weekend review (`Q-002`).

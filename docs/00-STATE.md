@@ -1,6 +1,6 @@
 # 00 — STATE (living; update at the end of EVERY session)
 
-**Last updated:** 2026-10-30 18:48 CST · Antigravity (Gemini 4 Argon) · Phase: **P1, P2, All 4 `.NET 10` Workshops/Capstone & Async Update Pack for Max (`2026-10-30_update-async-para-max.md`) Done → Ready for Fab to Share with Max or Continue P4**
+**Last updated:** 2026-10-30 18:55 CST · Antigravity (subagent) · Phase: **P1, P2, All 4 `.NET 10` Workshops/Capstone & Async Update Pack for Max Done → Private GitHub Remote Established (`origin`)**
 
 ## One-line status
 Completed the **P1 Syllabus Audit**, the **Proposed Temario v2 in Rioplatense Spanish**, **all four `.NET 10` Workshop & Capstone Packages covering 100% of the graded deliverables across Modules 1, 2, and 3** (`ws-m1-skills-mcp-dotnet`, `ws-m2-sdd-dotnet`, `ws-m2-harness-oracle-dotnet`, `ws-m3-capstone-dotnet`), and the **Async Weekend Update & Walkthrough Pack for Max** (`curriculum/2026-10-30_update-async-para-max.md`).
@@ -27,14 +27,14 @@ Completed the **P1 Syllabus Audit**, the **Proposed Temario v2 in Rioplatense Sp
   8. `curriculum/2026-10-30_update-async-para-max.md` — **Async Weekend Update & Walkthrough Pack for Max** summarizing all improvements from *Temario v1* $\rightarrow$ *Temario v2*, the 4 `.NET 10` workshops, and the 3 open alignment questions for Max.
 
 ## Verified access (2026-10-30, `./scripts/check-access.sh` → 15/15)
-gog (Drive, `faboster@gmail.com`, readonly) · WhatsApp bridge DBs + REST download · local ASR (Nemotron 3.5 + Parakeet v3 via transcribe.cpp) · ffmpeg/pandoc · vault `knowledge` (read) · firecrawl + web search · `.NET SDK 10.0.402`.
+gog (Drive, `faboster@gmail.com`, readonly) · WhatsApp bridge DBs + REST download · local ASR (Nemotron 3.5 + Parakeet v3 via transcribe.cpp) · ffmpeg/pandoc · vault `knowledge` (read) · firecrawl + web search · `.NET SDK 10.0.402` · GitHub CLI (`fabzter`) & private remote `origin` (`https://github.com/fabzter/curso_ai.git`, D-023).
 
 ## NEXT ACTIONS (ordered)
 1. Re-check for news from Max at session start (`./scripts/wa-max-chat.sh | tail -20`; S-03 `modifiedTime`).
 2. Incorporate Max's feedback once he reviews the async update over the weekend (confirming `Q-002`: stack, IDE/ALM, and classroom harness licenses), or build additional unit-specific exercises (`Units 1.1, 1.2, 2.2`) / slides (`P4`) if Fab wants to keep advancing.
 
 ## Do-not-do list for the next agent
-No sends/edits/shares · no vault/Drive writes without OK · never touch Luca anything · don't ingest Max chat before 2026-10-13 · don't state unverified tool facts · don't push git.
+No sends/edits/shares · no vault/Drive writes without OK · never touch Luca anything · don't ingest Max chat before 2026-10-13 · don't state unverified tool facts · git push only to private remote `origin` (`fabzter/curso_ai`, D-023).
 
 ## Paste-ready handoff prompt (for a fresh session / another agent)
 ```
