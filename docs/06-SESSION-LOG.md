@@ -107,3 +107,15 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Updated `docs/00-STATE.md` and `docs/06-SESSION-LOG.md`.
 **Files touched:** `AGENTS.md`, `docs/02-DECISIONS.md`, `docs/00-STATE.md`, `docs/06-SESSION-LOG.md`.
 **Left open:** Awaiting Max's async weekend review (`Q-002`).
+
+## 2026-10-30 19:01–19:05 · Antigravity (subagent) · Deliverable Exports to .docx & Session Close
+**Done**
+- Exported both Markdown curriculum deliverables to formatted `.docx` via `pandoc`:
+  - `curriculum/2026-10-30_temario-v2-propuesta.docx` (29 KB)
+  - `curriculum/2026-10-30_update-async-para-max.docx` (19 KB)
+- Verified non-empty binary integrity of both `.docx` artifacts.
+- Executed Session End Protocol: updated `docs/00-STATE.md` and `docs/06-SESSION-LOG.md`.
+- Closed the 2026-10-30 working session cleanly. Fab will return tomorrow with his personal review and feedback on the materials before presenting them to Max.
+- Committed and pushed to `origin/master`.
+**Files touched:** `curriculum/2026-10-30_temario-v2-propuesta.docx`, `curriculum/2026-10-30_update-async-para-max.docx`, `docs/00-STATE.md`, `docs/06-SESSION-LOG.md`.
+**Left open:** Fab's personal review tomorrow prior to sharing with Max; awaiting Max's weekend feedback (`Q-002`).
