@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardiaCloud.CommandCenter.Api", "src\GuardiaCloud.CommandCenter.Api\GuardiaCloud.CommandCenter.Api.csproj", "{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardiaCloud.CommandCenter.Tests", "tests\GuardiaCloud.CommandCenter.Tests\GuardiaCloud.CommandCenter.Tests.csproj", "{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|x64.Build.0 = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|x64.ActiveCfg = Release|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|x64.Build.0 = Release|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD}.Release|x86.Build.0 = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|x64.Build.0 = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFDA96E9-0E02-4A63-9484-2D78DA7CC6CD} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{FE4D2872-3FE3-4D09-B27F-A7DA5C3A774D} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+	EndGlobalSection
+EndGlobal

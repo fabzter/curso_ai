@@ -72,3 +72,15 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
   - `solution/` (compilable `.NET 10` reference solution passing `./scripts/post-edit-dotnet-hook.sh` and all 7 xUnit tests in 353 ms: 3 `NetArchTest.Rules` tests + 4 `WebApplicationFactory` integration tests for Tarea A [HITL monthly credits] and Tarea B [Full AI shift export summary], plus `comparativa-hitl-vs-full-ai.md`).
 **Files touched:** `workshops/ws-m2-harness-oracle-dotnet/**`, `sources/whatsapp/max-chat_2026-10-13_to_2026-10-28.md`, `docs/00-STATE.md`, `docs/01-CONTEXT.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/04-SOURCES.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
 **Left open:** `Q-016` (build Module 3 Capstone Spec `ws-m3-capstone-dotnet` vs. prepare the Async Weekend Update Pack for Max).
+
+## 2026-10-30 18:38–18:46 · Antigravity (Gemini 4 Argon) · P3 Fourth Package: Module 3 14-Hour Capstone (`ws-m3-capstone-dotnet`)
+**Done**
+- Recorded Fab's answer to `Q-016` (`D-020`): build the **Module 3 Capstone Specification & Seed Package (`workshops/ws-m3-capstone-dotnet/`, Units 3.1–3.4)** first.
+- Built the complete 14-hour Module 3 Capstone package under `workshops/ws-m3-capstone-dotnet/`:
+  - `00-WORKSHOP-SPEC.md` (14-hour Capstone specification covering Units 3.1, 3.2, 3.3, and 3.4, 4-role team topology for 3–5 engineers, and mapping to Entregables #3 [25%], #4 [35%], and #5 [10%] = 70% of final course grade).
+  - `01-PLIEGO-CASO-Y-GUIA-EQUIPOS.md` (team step-by-step execution guide across Units 3.1–3.4 in Rioplatense Spanish).
+  - `02-GUIA-FACILITADOR-Y-RUBRICAS-M3.md` (instructor runbook, 8-item Client Role-Play answer sheet for Unidad 3.1, Sprint 1/2 convergence checkpoint rules, and the 3 official 100-pt grading rubrics for Entregables #3, #4, and #5).
+  - `starter/` (compilable `.NET 10` brownfield seed repository `GuardiaCloud.CommandCenter.sln`, `AGENTS.md`/`CLAUDE.md`, `pliego-licitacion-cliente.md` with 8 deliberate business ambiguities, `plantilla-retrospectiva-metricas.md`, `BUG-301` seeded in `CommandCenterEvaluator.ApplyWebhookEvent`, and 3 passing baseline xUnit tests).
+  - `solution/` (compilable `.NET 10` reference solution with `specs/command-center-v2/{spec,plan,tasks}.md`, `retrospectiva-metricas-equipo-referencia.md`, and **8 passing xUnit tests** in 545 ms covering `NetArchTest.Rules v1.3.2`, `BUG-301` webhook idempotency, `FEAT-301` 80% proactive escalation + 15-min cooldown, `FEAT-302` force-majeure dual approval + RFC 9457 `CC-400-SAME-APPROVER` / `CC-422-INVALID-DUAL-TOKEN`, and `FEAT-303` executive tier dashboard).
+**Files touched:** `workshops/ws-m3-capstone-dotnet/**`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/03-OPEN-QUESTIONS.md`, `docs/06-SESSION-LOG.md`, `docs/07-ROADMAP.md`.
+**Left open:** `Q-017` (prepare Option C — Async Weekend Update Pack for Max — vs. additional unit-level labs).
