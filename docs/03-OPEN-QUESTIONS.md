@@ -13,13 +13,13 @@ Ask Fab in batches (max ~5), most blocking first.
 | ID | Question | Note |
 |---|---|---|
 | Q-004 | Start date, schedule, budget, licenses, tool policy | Fab 2026-10-30: "for now let's not worry about those constraints". Design assumption: licenses available for the main harnesses; keep fallbacks (demo-only) as in Max's draft. Revisit before P5. |
-| Q-009 | Vault project note / link on Max's person note | Not authorized. Fab only OK'd notes inside this repo. Ask again if wanted. |
 | Q-010 | Does Fab have the recording/summary of the LIDR multi-agent workshop? | Low priority benchmark source. |
 | Q-003b | What exactly Max/the consultancy already told the client | Unknown, and Fab sent nothing. Matters only when reconciling with Max. |
 
 ## Answered
 | ID | Answer | Date | Decision |
 |---|---|---|---|
+| Q-009 | **Authorized (`D-025`):** Course outputs now live in the `knowledge` Obsidian vault under `01_projects/Curso Desarrollo de Software con IA/` (Markdown notes) and `99_attachments/Curso Desarrollo de Software con IA/` (`.docx` and `.pptx` deliverables), managed via `./scripts/course-sync.sh`. | 2026-11-03 | D-025 |
 | Q-017 | Build **Option C — the Async Weekend Update & Walkthrough Pack for Max (`curriculum/2026-10-30_update-async-para-max.md`)** plus a paste-ready WhatsApp summary message. | 2026-10-30 | D-021 |
 | Q-016 | Build the **Module 3 Capstone Specification & Seed Package (`workshops/ws-m3-capstone-dotnet/`, Units 3.1–3.4)** first before preparing the async update pack for Max. | 2026-10-30 | D-020 |
 | Q-015 | Build **Units 1.4 + 2.3 (`workshops/ws-m2-harness-oracle-dotnet/`: Harness Engineering + `NetArchTest` Oracle + HITL vs. Full AI in `git worktrees`)** now, and keep **Option C (Executive Sync/Update Pack for Max)** in mind for when we feel ready. | 2026-10-30 | D-019 |
