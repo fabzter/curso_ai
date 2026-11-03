@@ -50,13 +50,11 @@
 
 ### 2.2 Unit 1.2 — Herramientas de Desarrollo (IDEs & Coding Assistants)
 #### Facts (Sourced)
-- **GitHub Copilot in Visual Studio & VS Code (C# Dev Kit):** First-class Microsoft integration for .NET, including Copilot Edits / Agent Mode in Visual Studio 2022 (17.13+) & VS Code, slash commands, `#file`/`#solution` context, custom instructions (`.github/copilot-instructions.md`), and .NET profiler/debugger assistance · `https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-chat` · accessed 2026-10-30 · current Oct 2026 · **confidence: high**.
-- **JetBrains Rider (AI Assistant & Junie):** JetBrains Rider is a leading cross-platform .NET IDE; includes JetBrains AI Assistant and **Junie** (JetBrains' coding agent), plus support for GitHub Copilot and Claude Agent plugins · `https://www.jetbrains.com/rider/` and `https://www.jetbrains.com/junie/` · accessed 2026-10-30 · current Oct 2026 · **confidence: high**.
-- **Cursor (`cursor.com`) & Windsurf (`windsurf.com`):** VS Code forks supporting C# via OpenVSX / Muhammadsammy C# / DotRush extensions, `.cursor/rules/*.mdc`, and multi-file agent mode · accessed 2026-10-30 · current Oct 2026 · **confidence: high**.
+- **VS Code + GitHub Copilot:** First-class Microsoft integration for .NET, including Copilot Edits / Agent Mode in VS Code, slash commands, `#file`/`#codebase` context, custom instructions (`.github/copilot-instructions.md` and `AGENTS.md`), and .NET debugger/test assistance · `https://code.visualstudio.com/docs/copilot/overview` · accessed 2026-10-30 · current Oct 2026 · **confidence: high**.
+- **Cursor (`cursor.com`) & Windsurf (`windsurf.com`):** AI-native VS Code forks supporting C# extensions, workspace rules (`.cursor/rules/*.mdc`, `.windsurfrules`, `AGENTS.md`), and multi-file agent mode · accessed 2026-10-30 · current Oct 2026 · **confidence: high**.
 
-#### Inference (.NET + Azure Fit)
-- **Critical correction to Max's v1:** Max's Unit 1.2 lists *"Cursor, Windsurf, GitHub Copilot, JetBrains AI, Claude Code, Codex"*, without mentioning **Visual Studio** or **JetBrains Rider** vs. VS Codeforks. In a .NET consultancy, many senior backend engineers live in **Visual Studio** or **JetBrains Rider** because of Roslyn refactoring, solution-wide analysis, and MSBuild/NuGet debugging, whereas Cursor/Windsurf cannot legally run the proprietary Microsoft `ms-dotnettools.csdevkit` extension (they rely on open-source LSP alternatives like DotRush or OmniSharp).
-- Unit 1.2 must explicitly compare the **.NET IDE trade-off**: Visual Studio + Copilot Agent Mode vs. Rider + AI/Copilot vs. VS Code / Cursor + CLI Harness (Claude Code / Codex).
+#### Inference (.NET + Azure Fit & Course Decision `D-024`)
+- **Course IDE Standard (`D-024`):** To keep classroom setup simple and aligned with Max's scope, Unit 1.2 settles on **VS Code (with GitHub Copilot), Cursor, and Windsurf** as the standard IDEs of the course (paired with CLI harnesses like Claude Code and Codex), while letting developers use their own habitual IDE if they prefer.
 
 ---
 
