@@ -21,7 +21,7 @@
    - *Fix:* Compress passive theory blocks into 20–30 min conceptual framing + live instructor walkthroughs, and turn the core of every unit into a **2.0 to 3.5 h structured Workshop (`D-015`)**, bringing Modules 1–2 to **62.5% real practice** (and **70% across the 52 h course**).
 2. **Missing .NET + Azure Ecosystem (`D-014`):**
    - *Finding:* Because Max generated v1 via generic Claude prompting, the draft defaults to Python/TypeScript ecosystems:
-     - **Unit 1.2** omits **Visual Studio 2022/2026** and **JetBrains Rider** (and the C# LSP/Roslyn trade-offs in VS Code forks like Cursor/Windsurf).
+     - **Unit 1.2** mentions multiple IDEs without settling on a focused standard set for the classroom: we simplify and standardize the course IDEs on **VS Code (with GitHub Copilot), Cursor, and Windsurf** (`D-024`), while allowing developers to use their own habitual IDE if they prefer.
      - **Unit 1.3** teaches *only* `Claude Agent SDK` and `OpenAI Agents SDK` (Python/TS), ignoring **`Microsoft.Extensions.AI` (`v10.11.0`)**, **Microsoft Agent Framework (`Microsoft.Agents.AI` `v1.27.0`, unifying Semantic Kernel & AutoGen)**, and **Azure AI Foundry Agent Service**.
      - **Unit 1.5 (MCP)** explicitly tells students to build an MCP server *"con el SDK de TypeScript o Python"*, overlooking the official Microsoft-co-maintained **C# MCP SDK (`ModelContextProtocol` NuGet `v2.3.0` and `ModelContextProtocol.AspNetCore`)** and the official **Azure MCP Server (`microsoft/mcp`)**.
    - *Fix:* Make **.NET (C# 13 / .NET 9–10, ASP.NET Core Minimal APIs, EF Core, xUnit, Testcontainers, NetArchTest) + Azure** the primary spine of every workshop.
@@ -76,11 +76,11 @@
 
 ### Unit 1.2 — Herramientas de Desarrollo (4 hs)
 - **Claim Audit:**
-  - *Verified:* Cursor, Windsurf, GitHub Copilot, JetBrains AI, Claude Code, Codex.
-  - *Missing for .NET:* Visual Studio 2022/2026 (Copilot Edits / Agent Mode + Roslyn/debugger integration) and JetBrains Rider (AI Assistant + Junie), plus the licensing/LSP caveat that VS Code forks (Cursor/Windsurf) cannot run Microsoft's proprietary C# Dev Kit.
+  - *Verified:* VS Code + GitHub Copilot, Cursor, Windsurf, Claude Code, Codex.
+  - *Simplification (`D-024`):* Standardize the classroom IDE coverage on **VS Code (with GitHub Copilot), Cursor, and Windsurf**, letting developers use their own habitual IDE if they want rather than expanding into Visual Studio or JetBrains Rider/Junie.
   - *Empirical anchor added:* METR Jul 2025 RCT (19% slowdown vs. 20% perceived speedup) and DORA 2025 to frame why undisciplined IDE chat ("vibe coding") creates rework.
 - **Learning Objectives (New):**
-  1. Configure an AI-assisted .NET IDE (Visual Studio / Rider / VS Code + Cursor) with workspace rules (`.github/copilot-instructions.md` / `.cursor/rules`) and solution-level context.
+  1. Configure an AI-assisted IDE (**VS Code + GitHub Copilot, Cursor, or Windsurf**, or the developer's habitual IDE) with workspace rules (`.github/copilot-instructions.md` / `.cursor/rules` / `.windsurfrules` / `AGENTS.md`) and solution-level context.
   2. Execute 5 high-ROI daily engineering workflows on a brownfield .NET solution: legacy code comprehension, Roslyn-safe refactoring, xUnit + FluentAssertions/Verify test generation, exception/dump debugging, and PR security/quality review.
   3. Detect and prevent hallucinated NuGet packages (slopsquatting), hardcoded secrets, and subtle async/EF Core anti-patterns (`N+1`, sync-over-async, missing `CancellationToken`).
 - **Workshop Rebalance (1:00 $\rightarrow$ 2:30 hands-on):**

@@ -9,7 +9,7 @@
 ## Qué evolucionamos en esta versión v2 (Resumen de mejoras)
 
 1. **Aterrizaje de punta a punta en el ecosistema .NET y Azure:**
-   - **IDEs:** sumamos **Visual Studio 2022/2026 (Copilot Agent Mode)** y **JetBrains Rider (AI Assistant / Junie)** junto a VS Code, Cursor y Windsurf, explicando las diferencias reales con Roslyn, C# Dev Kit y soluciones `.sln`/`.slnx`.
+   - **IDEs (simple y estándar):** el curso se dicta sobre **VS Code (con GitHub Copilot), Cursor y Windsurf**. Cada participante puede usar su IDE habitual si lo prefiere, pero las demos, guías y soporte del aula se basan en estos tres.
    - **Agentes propios en .NET (Unidad 1.3):** incorporamos **`Microsoft.Extensions.AI`** (`IChatClient`) y **Microsoft Agent Framework (`Microsoft.Agents.AI`, sucesor unificado de Semantic Kernel + AutoGen)** conectado a **Azure AI Foundry**, en lugar de limitarnos a SDKs de Python/TypeScript.
    - **Servidores MCP en C# (Unidad 1.5):** el taller práctico usa el **SDK oficial de C# para MCP (`ModelContextProtocol` y `ModelContextProtocol.AspNetCore` en NuGet, v2.3+)** y suma el **Azure MCP Server oficial (`microsoft/mcp`)**.
    - **Oráculo de verificación en .NET (Módulos 2 y 3):** aterrizamos el concepto de *"tests como oráculo"* con **xUnit**, **`WebApplicationFactory`**, **Testcontainers** (SQL Server / PostgreSQL / Redis reales en contenedor) y tests de arquitectura con **`NetArchTest`** para evitar que el agente rompa capas.
@@ -69,15 +69,15 @@ Uso de IA generativa para pasar de una necesidad de negocio a prototipos navegab
 Recorrido práctico por los asistentes y agentes integrados al IDE sobre una solución .NET multi-proyecto, con criterios empíricos para elegir herramientas y evitar retrabajo.
 
 **Objetivos de aprendizaje:**
-- Distinguir las capacidades y límites de autocompletado, edición multi-archivo y modo agente entre **Visual Studio 2022/2026**, **JetBrains Rider**, **VS Code (C# Dev Kit)**, **Cursor** y **Windsurf**.
-- Aplicar reglas de proyecto y anclaje de contexto (`#solution`, `@files`, documentación oficial) para resolver tareas diarias en C# sin degradar la arquitectura.
+- Distinguir las capacidades y límites de autocompletado, edición multi-archivo y modo agente entre los tres IDEs estándar del curso: **VS Code (con GitHub Copilot)**, **Cursor** y **Windsurf** (cada participante puede usar su IDE habitual por su cuenta).
+- Aplicar reglas de proyecto y anclaje de contexto (archivos de reglas del proyecto, referencias a archivos, documentación oficial) para resolver tareas diarias en C# sin degradar la arquitectura.
 - Auditar código generado por IA para detectar alucinaciones de paquetes NuGet (*slopsquatting*), fugas de secretos, problemas de licencias y antipatrones en EF Core / `async-await`.
 
 **Artefacto entregable:** Configuración base de instrucciones en el IDE + batería de tests xUnit y reporte de refactorización sobre el repositorio semilla .NET.
 
 | Bloque | Duración | Contenido |
 |---|---:|---|
-| Mapa del ecosistema y la paradoja de productividad | 0:45 | IDE tradicional con IA (**Visual Studio + Copilot Agent Mode**, **JetBrains Rider + AI/Junie**) vs. forks AI-first (**Cursor**, **Windsurf**) vs. agentes de terminal (**Claude Code**, **Codex**). Particularidades de C# (Roslyn, MSBuild y licenciamiento de C# Dev Kit). Qué muestra la evidencia empírica (estudio METR y DORA): por qué usar IA sin método genera *"workslop"* y retrabajo. |
+| Mapa del ecosistema y la paradoja de productividad | 0:45 | Los tres IDEs estándar del curso: **VS Code + GitHub Copilot** vs. forks AI-first (**Cursor**, **Windsurf**), y su relación con los agentes de terminal (**Claude Code**, **Codex**). Qué cambia entre ellos en modo agente, edición multi-archivo y reglas de proyecto. Qué muestra la evidencia empírica (estudio METR y DORA): por qué usar IA sin método genera *"workslop"* y retrabajo. |
 | Calidad, seguridad y matriz de decisión | 0:45 | Riesgos reales en .NET: dependencias NuGet inventadas, *queries* EF Core ineficientes (`N+1`), omisión de `CancellationToken`, secretos en `appsettings.json`. Matriz para elegir herramienta según tamaño de solución, privacidad y costo de tokens. |
 | **[Workshop 1.2]** 5 flujos diarios sobre una solución .NET brownfield | **2:30** | **Práctica guiada (150 min) sobre el Repositorio Semilla (.NET + Azure):** (1) Arqueología y mapeo de código legado; (2) Refactorización segura de un servicio C# acoplado; (3) Generación de tests unitarios y de integración (**xUnit + WebApplicationFactory**); (4) Diagnóstico de un bug de concurrencia/EF Core a partir de logs y stack trace; (5) Code review asistido de un PR con fallas de seguridad inyectadas. |
 
@@ -310,6 +310,6 @@ La evaluación es **100% práctica y acumulativa**: cada entregable parcial de l
 
 Para aprovechar el 70% de carga práctica sin fricciones de instalación en el aula, cada participante debe contar con:
 1. **Stack .NET & Contenedores:** **.NET 9 SDK (o .NET 10 SDK)**, **Docker Desktop** (o Rancher Desktop / Podman compatible con **Testcontainers**), **Git** y **Node.js 22+** / **Python 3.11+ con `uv`** (requeridos por los CLIs de Spec Kit y OpenSpec).
-2. **IDE a elección:** **Visual Studio 2022 (17.13+) / 2026**, **JetBrains Rider**, **VS Code** (con C# Dev Kit) o **Cursor / Windsurf**.
+2. **IDE estándar del curso:** **VS Code (con GitHub Copilot)**, **Cursor** o **Windsurf**. Si alguien prefiere otro IDE puede usarlo, pero las guías y el soporte en el aula se basan en estos tres.
 3. **Acceso a al menos un Harness de agentes:** **Claude Code**, **GitHub Copilot (con Agent Mode / CLI)** u **OpenAI Codex**. *(Las herramientas **Devin** y **AWS Kiro** se cubren mediante demostración guiada del instructor en caso de no contar con licencias individuales para todos los asistentes).*
 4. **Cuenta de GitHub** con acceso al repositorio semilla del curso.

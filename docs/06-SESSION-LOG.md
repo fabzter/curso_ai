@@ -118,4 +118,13 @@ Entry format: `## YYYY-MM-DD HH:MM · agent/model · title` → Done · Findings
 - Closed the 2026-10-30 working session cleanly. Fab will return tomorrow with his personal review and feedback on the materials before presenting them to Max.
 - Committed and pushed to `origin/master`.
 **Files touched:** `curriculum/2026-10-30_temario-v2-propuesta.docx`, `curriculum/2026-10-30_update-async-para-max.docx`, `docs/00-STATE.md`, `docs/06-SESSION-LOG.md`.
+
+## 2026-11-03 14:04–14:11 · Antigravity (Claude Opus 5.5 → Gemini 4 Argon) · Pre-Call IDE Simplification (`D-024`), Updated `.docx` Exports & 13-Slide Presentation Deck (`.pptx`)
+**Done**
+- Recorded `D-024` per Fab's feedback: removed the unrequested Visual Studio 2022/2026 and JetBrains Rider/Junie expansions and standardized the course IDEs on **VS Code (with GitHub Copilot), Cursor, and Windsurf** (letting developers use their own habitual IDE if they want).
+- Updated `curriculum/2026-10-30_temario-v2-propuesta.md`, `curriculum/2026-10-30_update-async-para-max.md`, and `curriculum/2026-10-30_syllabus-review-v1.md` to reflect `D-024`.
+- Re-exported `curriculum/2026-10-30_temario-v2-propuesta.docx` and `curriculum/2026-10-30_update-async-para-max.docx` via `pandoc`.
+- Wrote `scripts/build-deck-max.py` and generated the 13-slide widescreen presentation deck `curriculum/2026-11-03_deck-temario-v2-para-max.pptx` for Fab's call with Max.
+**Files touched:** `curriculum/2026-10-30_temario-v2-propuesta.{md,docx}`, `curriculum/2026-10-30_update-async-para-max.{md,docx}`, `curriculum/2026-10-30_syllabus-review-v1.md`, `curriculum/2026-11-03_deck-temario-v2-para-max.pptx`, `scripts/build-deck-max.py`, `docs/00-STATE.md`, `docs/02-DECISIONS.md`, `docs/06-SESSION-LOG.md`.
+**Left open:** Outcome of Fab's live call with Max (`Q-002`).
 **Left open:** Fab's personal review tomorrow prior to sharing with Max; awaiting Max's weekend feedback (`Q-002`).
