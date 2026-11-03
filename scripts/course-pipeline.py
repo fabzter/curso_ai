@@ -154,6 +154,9 @@ def get_all_pptx_files() -> list[Path]:
     slides_dir = ROOT / "curriculum" / "slides"
     if slides_dir.exists():
         out.extend(sorted(slides_dir.glob("*.pptx")))
+    pres_dir = ROOT / "presentaciones"
+    if pres_dir.exists():
+        out.extend(sorted(pres_dir.glob("*.pptx")))
     return out
 
 
@@ -215,9 +218,14 @@ def cmd_build(args):
         )
         print(f"    exported {docx_path.relative_to(ROOT)} ({docx_path.stat().st_size} bytes)")
 
-    print("==> [3/4] Generating Executive Deck for Max + All Day-by-Day & Module .pptx Decks...")
+    print("==> [3/4] Generating Executive Deck for Max + All Day-by-Day, Unit & Module .pptx Decks...")
     subprocess.run(["python3", str(ROOT / "scripts" / "build-deck-max.py")], check=True)
     subprocess.run(["python3", str(ROOT / "scripts" / "build-all-day-decks.py")], check=True)
+    subprocess.run(["python3", str(ROOT / "scripts" / "build-classroom-presentations.py")], check=True)
+    shutil.copy2(
+        ROOT / "curriculum" / "2026-11-03_guia-presentador-paso-a-paso-curso-completo.docx",
+        ROOT / "presentaciones" / "00-GUIA-DEL-PRESENTADOR-PASO-A-PASO.docx",
+    )
 
     print("==> [4/4] Recording SHA-256 & slide text snapshots in .course-manifest.json...")
     record_current_state_in_manifest()
