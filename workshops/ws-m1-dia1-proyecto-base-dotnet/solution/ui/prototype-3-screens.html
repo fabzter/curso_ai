@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>GuardiaCloud SLA — Prototipo 3 Pantallas (Unidad 1.1 Solution)</title>
+  <style>
+    :root {
+      --bg-canvas: #F8FAFC;
+      --surface-primary: #0F172A;
+      --surface-card: #FFFFFF;
+      --sla-healthy: #0D9488;
+      --sla-warning: #D97706;
+      --sla-breached: #DC2626;
+    }
+    body { font-family: Inter, system-ui, sans-serif; background: var(--bg-canvas); color: #0F172A; margin: 0; padding: 24px; }
+    h1, h2, h3 { margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+    .card { background: var(--surface-card); border-radius: 8px; padding: 16px; border: 2px solid #CBD5E1; }
+    .card.warning { border-color: var(--sla-warning); }
+    .card.breached { border-color: var(--sla-breached); }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 12px; font-weight: 700; color: #FFF; background: #1E3A8A; }
+    .rfc9457 { background: #FEF2F2; border-left: 4px solid var(--sla-breached); padding: 12px 16px; border-radius: 6px; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>GuardiaCloud SLA — Prototipo Validado de 3 Pantallas (.NET 10 DTO Handoff)</h1>
+
+  <h2>Pantalla 1: Tablero Principal de Guardia SLA (IncidentSlaCardDto)</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="badge">P2 · Gold</span> <code>INC-2026-1001</code>
+      <p>Consumo SLA: <strong>42%</strong> (`consumedRatio: 0.42`, `isBreached: false`)</p>
+    </article>
+    <article class="card warning">
+      <span class="badge" style="background:#D97706">P1 · Platinum</span> <code>INC-2026-1002</code>
+      <p>Consumo SLA: <strong>84%</strong> (`consumedRatio: 0.84`, `isBreached: false`)</p>
+      <p style="color:#D97706;font-weight:bold">⚠ Atención: SLA al >= 80%. Requiere escalamiento proactivo.</p>
+    </article>
+    <article class="card breached">
+      <span class="badge" style="background:#DC2626">P1 · Platinum</span> <code>INC-2026-1003</code>
+      <p>Consumo SLA: <strong>118%</strong> (`consumedRatio: 1.18`, `isBreached: true`)</p>
+      <p style="color:#DC2626;font-weight:bold">✖ SLA Vencido (2 pausas fusionadas).</p>
+    </article>
+  </div>
+
+  <h2>Pantalla 2: Modal "Registrar Ventana de Pausa" (Regla Regulatoria P1)</h2>
+  <div class="card" style="max-width: 540px; margin-bottom: 24px;">
+    <h3>Registrar Pausa — <code>INC-2026-1002 (P1)</code></h3>
+    <p>Motivo (`PauseReason`): <code>WaitingForCustomer</code> | <code>MaintenanceWindow</code></p>
+    <p style="background:#FFFBEB;border:1px solid #D97706;padding:8px;border-radius:6px;">
+      <strong>Aviso Regulatorio P1:</strong> En incidentes P1 la pausa máxima acumulada es de <strong>30 minutos</strong>.
+    </p>
+  </div>
+
+  <h2>Pantalla 3: Timeline de Auditoría + Banner de Error RFC 9457 (ProblemDetails)</h2>
+  <div class="rfc9457">
+    <strong>HTTP 422 Unprocessable Entity — ProblemDetails (RFC 9457)</strong><br/>
+    title: "Límite de pausa P1 excedido"<br/>
+    detail: "La pausa solicitada acumula 35 min y supera el tope regulatorio de 30 min para incidentes P1."<br/>
+    errorCode: "SLA-422-P1-PAUSE-CAP-EXCEEDED"<br/>
+    traceId: "00-8f3a9d1c2e4b6a80123456789abcdef0-4b2c1d0e9f8a7b6c-01"
+  </div>
+</body>
+</html>

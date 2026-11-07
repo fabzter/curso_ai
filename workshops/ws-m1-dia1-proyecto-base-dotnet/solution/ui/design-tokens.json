@@ -1,0 +1,26 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "meta": {
+    "system": "GuardiaCloud SLA Console (.NET 10)",
+    "version": "1.0.0"
+  },
+  "colors": {
+    "bgCanvas": "#F8FAFC",
+    "surfacePrimary": "#0F172A",
+    "surfaceCard": "#FFFFFF",
+    "textPrimary": "#0F172A",
+    "textMuted": "#64748B",
+    "slaHealthy": "#0D9488",
+    "slaWarning80": "#D97706",
+    "slaBreached": "#DC2626"
+  },
+  "typography": {
+    "fontFamilySans": "Inter, system-ui, sans-serif",
+    "fontFamilyMono": "JetBrains Mono, Consolas, monospace"
+  },
+  "spacing": {
+    "cardPadding": "16px",
+    "borderRadius": "8px",
+    "badgeRadius": "9999px"
+  }
+}

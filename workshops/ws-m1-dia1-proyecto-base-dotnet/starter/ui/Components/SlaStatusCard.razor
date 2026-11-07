@@ -1,0 +1,16 @@
+@* ui/Components/SlaStatusCard.razor — STARTER (Unidad 1.1 Paso 3) *@
+@using GuardiaCloud.Sla.Api.Domain
+
+<article class="sla-card">
+    @* TODO (Unidad 1.1 Paso 3):
+       1. Mostrar Severity, ClientTier e IncidentId desde @Item.
+       2. Renderizar barra de progreso con @Item.ConsumedRatio.
+       3. Si @Item.IsAtRisk80Percent es true, mostrar alerta ámbar preventiva (>= 80%).
+    *@
+    <h4>@Item.IncidentId</h4>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public required IncidentSlaCardDto Item { get; set; }
+}

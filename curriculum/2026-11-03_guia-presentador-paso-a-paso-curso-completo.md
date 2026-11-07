@@ -6,9 +6,10 @@
 - **Duración total:** 52 horas presenciales (30% encuadre conceptual y demos en vivo = 15.75 hs · 70% práctica guiada y workshops = 36.25 hs)
 - **Stack técnico primario (`D-014`):** `.NET 10` (C# 13, ASP.NET Core Minimal APIs, EF Core, `ProblemDetails` RFC 9457, `TimeProvider`, xUnit, `WebApplicationFactory`, `Testcontainers`, `NetArchTest.Rules` v1.3.2, `ModelContextProtocol` C# SDK v2.3.0, `Microsoft.Extensions.AI` v10.11.0, `Microsoft.Agents.AI` v1.27.0) + **Azure**
 - **IDEs estándar del curso (`D-024`):** **VS Code (con GitHub Copilot), Cursor y Windsurf** *(cada desarrollador puede usar su IDE habitual por su cuenta si lo prefiere)* + Harnesses de terminal/cloud (**Claude Code**, **OpenAI Codex** y **Devin**)
-- **Repositorios de trabajo:**
-  - Módulos 1 y 2: `GuardiaCloud.Sla.sln` (`workshops/ws-m1-skills-mcp-dotnet/`, `workshops/ws-m2-sdd-dotnet/`, `workshops/ws-m2-harness-oracle-dotnet/`)
-  - Módulo 3 (Capstone): `GuardiaCloud.CommandCenter.sln` (`workshops/ws-m3-capstone-dotnet/`)
+- **Repositorios de trabajo (`workshops/README.md`):**
+  - Día 1 (Unidades 1.1 y 1.2 — Proyecto Base Semilla): `GuardiaCloud.Sla.sln` (`workshops/ws-m1-dia1-proyecto-base-dotnet/`)
+  - Módulos 1 y 2 (Unidades 1.3 a 2.4): `workshops/ws-m1-skills-mcp-dotnet/`, `workshops/ws-m2-harness-oracle-dotnet/` y `workshops/ws-m2-sdd-dotnet/`
+  - Módulo 3 (Capstone Unidades 3.1 a 3.4): `GuardiaCloud.CommandCenter.sln` (`workshops/ws-m3-capstone-dotnet/`)
 
 ---
 

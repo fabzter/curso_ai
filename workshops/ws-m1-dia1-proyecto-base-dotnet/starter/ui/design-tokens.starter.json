@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "meta": {
+    "system": "GuardiaCloud SLA Console",
+    "status": "TODO: Completar tokens en Unidad 1.1 Paso 2"
+  },
+  "colors": {
+    "bgCanvas": "#F8FAFC",
+    "surfaceCard": "#FFFFFF",
+    "slaHealthy": "TODO",
+    "slaWarning80": "TODO",
+    "slaBreached": "TODO"
+  }
+}

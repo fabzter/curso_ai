@@ -78,6 +78,18 @@ VAULT_MD_PAIRS = [
         VAULT_PROJECT_DIR / "Unidades" / "Unidad 2.2 - Impacto Estimacion y DAG.md",
     ),
     (
+        ROOT / "workshops" / "README.md",
+        VAULT_PROJECT_DIR / "Workshops" / "00 - Mapa Maestro de Proyectos Base y Workshops (.NET 10).md",
+    ),
+    (
+        ROOT / "workshops" / "ws-m1-dia1-proyecto-base-dotnet" / "01-GUIA-PASO-A-PASO.md",
+        VAULT_PROJECT_DIR / "Workshops" / "WS0 - Proyecto Base Dia 1 (Diseno UI y 5 Flujos IDE en .NET 10).md",
+    ),
+    (
+        ROOT / "workshops" / "ws-m1-dia1-proyecto-base-dotnet" / "02-GUIA-FACILITADOR-Y-SOLUCIONES.md",
+        VAULT_PROJECT_DIR / "Workshops" / "WS0 - Facilitador y Soluciones Dia 1 (GuardiaCloud.Sla).md",
+    ),
+    (
         ROOT / "workshops" / "ws-m1-skills-mcp-dotnet" / "01-GUIA-PASO-A-PASO.md",
         VAULT_PROJECT_DIR / "Workshops" / "WS1 - Guia Paso a Paso (Skills y MCP en CSharp).md",
     ),
@@ -340,6 +352,12 @@ def cmd_publish_vault(_args):
         dst = VAULT_ATTACH_DIR / docx_path.name
         shutil.copy2(docx_path, dst)
         print(f"    copied {dst.relative_to(VAULT_ROOT)}")
+
+    zip_file = ROOT / "presentaciones" / "GuardiaCloud-Sla-Proyectos-Base-y-Workshops-DotNet10.zip"
+    if zip_file.exists():
+        dst_zip = VAULT_ATTACH_DIR / zip_file.name
+        shutil.copy2(zip_file, dst_zip)
+        print(f"    copied {dst_zip.relative_to(VAULT_ROOT)}")
 
     for pptx_path in (ROOT / "curriculum").glob("*.pptx"):
         dst = VAULT_ATTACH_DIR / pptx_path.name

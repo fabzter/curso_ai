@@ -1,9 +1,9 @@
 # 00 — STATE (living; update at the end of EVERY session)
 
-**Last updated:** 2026-11-03 17:30 CST · Antigravity (Gemini 4 Argon) · Phase: **Full Course Material Suite Completed (`D-025`: Step-by-Step Presenter Guide `.md`/`.docx`, All Day-by-Day & Module `.pptx` Decks, Unit Guides 1.1/1.2/2.2, Obsidian `knowledge` Vault Sync & Bidirectional On-Command Ingestion Pipeline `./scripts/course-sync.sh`)**
+**Last updated:** 2026-11-07 07:46 CST · Antigravity (Gemini 4 Argon) · Phase: **Complete 5-Workshop `.NET 10` Code Suite (`ws-m1-dia1-proyecto-base-dotnet` + M1/M2/M3) & Ready-to-Share `.zip` Archive (`GuardiaCloud-Sla-Proyectos-Base-y-Workshops-DotNet10.zip`) Built, Tested & Pushed (`D-026`)**
 
 ## One-line status
-Completed the **Full Course Material Suite**: the 52-hour **Step-by-Step Presenter & Facilitator Guide** (`curriculum/2026-11-03_guia-presentador-paso-a-paso-curso-completo.{md,docx}`), **all 11 `.pptx` slide decks** (Master Course Deck, Executive Deck for Max, Day 1 to Day 7 Step-by-Step Decks, and Module 1–3 Decks), standalone student guides for Units 1.1, 1.2, and 2.2, and the **Bidirectional Regeneration, Retroactive Edit Ingestion & Obsidian Vault Sync Pipeline (`./scripts/course-sync.sh`)** published to `knowledge/01_projects/Curso Desarrollo de Software con IA/` and `99_attachments/Curso Desarrollo de Software con IA/`.
+Completed the missing **Day 1 Base Project (`workshops/ws-m1-dia1-proyecto-base-dotnet/`)** so every single slide across all 13 units (`1.1` to `3.4`) maps 1:1 to compilable, tested `.NET 10` code (`starter/`: 2/2 passed; `solution/`: 10/10 passed), added the master mapping `workshops/README.md`, packaged the clean **`GuardiaCloud-Sla-Proyectos-Base-y-Workshops-DotNet10.zip`** (at repo root, `presentaciones/`, and Obsidian Vault), and pushed everything to the public GitHub repo `origin/master` (`https://github.com/fabzter/curso_ai`).
 
 ## What we know (details: `01-CONTEXT.md`)
 - Course: *Desarrollo de Software con IA*, 52 h, 3 modules, 13 units, in person. **Audience: members of a Buenos Aires software consultancy** (a friend of Max's; name unknown; not Shifta; not Disney staff).
