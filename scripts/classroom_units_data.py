@@ -163,7 +163,7 @@ UNITS_DATA = [
             {
                 "tag": "Unidad 1.1 · Workshop Práctico (2h 30m)",
                 "title": "Manos a la Obra: Taller Práctico de la Unidad 1.1",
-                "subtitle": "Guía paso a paso en `curriculum/unidades/unidad-1.1-diseno-ui-y-handoff-dotnet.md`.",
+                "subtitle": "Proyecto Base en `workshops/ws-m1-dia1-proyecto-base-dotnet/` y guía en `01-GUIA-PASO-A-PASO.md`.",
                 "left_title": "Pasos del Ejercicio en Duplas (150 min)",
                 "left_bullets": [
                     "Paso 1 (40m): Generar las 3 pantallas del Monitor `GuardiaCloud.Sla` (Tablero, Modal de Pausa y Timeline) usando el prompt acoplado al DTO.",
@@ -334,9 +334,9 @@ UNITS_DATA = [
                     "}",
                 ],
                 "right_is_code": True,
-                "bottom_title": "Flujo 5: Code Review Asistido de Seguridad y Calidad",
+                "bottom_title": "Flujo 5: Code Review Asistido de Seguridad y Calidad (`VibeCodedExportEndpoints.cs`)",
                 "bottom_bullets": [
-                    "Cerramos el taller auditando un PR contaminado con una checklist de 4 puntos: secretos, `CancellationToken`, consultas `N+1` y contrato `ProblemDetails` RFC 9457.",
+                    "En `workshops/ws-m1-dia1-proyecto-base-dotnet/`, auditamos `VibeCodedExportEndpoints.cs` corrigiendo: secretos hardcodeados, falta de `CancellationToken`, consultas `N+1` y contrato `ProblemDetails` RFC 9457.",
                 ],
             },
         ],

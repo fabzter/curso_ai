@@ -32,6 +32,9 @@
 > **Decks de apoyo:**
 > - `curriculum/2026-11-03_dia-1-paso-a-paso.pptx`
 > - `curriculum/slides/dia-1-unidades-1.1-y-1.2-paso-a-paso.pptx`
+> - `presentaciones/00-Modulo-1-Completo-Fundamentos-Agentes-Harness-MCP.pptx`
+> **Paquete de Código Base utilizado (Unidades 1.1 y 1.2):**
+> - `workshops/ws-m1-dia1-proyecto-base-dotnet/` (`starter/`: 2/2 tests en verde · `solution/`: 10/10 tests en verde + `ui/prototype-3-screens.html` + `ui/design-tokens.json` + `ui/Components/SlaStatusCard.razor`)
 
 ## Bloque 1 (Mañana · 4 Horas) — Unidad 1.1: Diseño de Producto e Interfaces con IA y Handoff a .NET
 
